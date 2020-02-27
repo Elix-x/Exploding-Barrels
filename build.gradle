@@ -19,9 +19,6 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
-def theName = name
-def theDescription = description
-
 if(!project.hasProperty('publish_name')) ext.publish_name = project.name
 if(!project.hasProperty('publish_desc')) ext.publish_desc = project.description
 if(!project.hasProperty('github_repo')) ext.github_repo = publish_name
