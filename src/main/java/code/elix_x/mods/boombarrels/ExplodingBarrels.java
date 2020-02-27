@@ -98,7 +98,7 @@ public class ExplodingBarrels {
 		protected boolean boomMelee;
 
 		public ExplodingBarrelBlock(boolean boomProjectile, boolean boomMelee){
-			super(Material.WOOD);
+			super(Block.Properties.create(Material.WOOD));
 			this.boomProjectile = boomProjectile;
 			this.boomMelee = boomMelee;
 			//TODO
