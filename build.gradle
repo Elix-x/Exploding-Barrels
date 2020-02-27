@@ -176,7 +176,7 @@ curseforge {
 	project {
 		id = curseforge_id
 		releaseType = version_channel
-		addGameVersion = minecraft_version
+		addGameVersion minecraft_version
 		changelogType = 'markdown'
 		changelog = "${getGitLastCommitMessage()}"
 		mainArtifact jar
