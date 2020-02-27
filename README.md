@@ -1,5 +1,6 @@
 [![Experiment Status](https://travis-ci.com/Elix-x/Exploding-Barrels.svg?branch=master)](https://travis-ci.com/Elix-x/Exploding-Barrels)
-⬆⬆⬆⬆⬆
+
+⬆⬆⬆⬆
 
 _Experiment Status_
 
