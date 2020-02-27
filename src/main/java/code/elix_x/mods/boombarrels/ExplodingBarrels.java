@@ -36,7 +36,7 @@ public class ExplodingBarrels {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, MODID);
 	public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, MODID);
 
-	public static final RegistryObject<ExplodingBarrelBlock> expBarrel = BLOCKS.reg(BOOMBARRELID, () -> new ExplodingBarrelBlock(true, false));
+	public static final RegistryObject<ExplodingBarrelBlock> expBarrel = BLOCKS.register(BOOMBARRELID, () -> new ExplodingBarrelBlock(true, false));
 	
 	static {
 		ITEMS.register(BOOMBARRELID, () -> new BlockItem(expBarrel.get(), new Item.Properties().group(ItemGroup.DECORATIONS)));
