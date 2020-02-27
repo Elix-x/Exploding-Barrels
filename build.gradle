@@ -125,7 +125,7 @@ publishing {
 			pom {
 				name = publish_name
 				description = publish_desc
-				url = "https://github.com/${github_repo_full}"
+				url = "https://github.com/${github_repo_full}".toString()
 				from components.java
 				licenses {
 					license {
