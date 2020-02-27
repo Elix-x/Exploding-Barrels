@@ -3,6 +3,7 @@ jdk:
   - openjdk10
 
 before_install:
+  - ./gradlew tasks
   - ./gradlew setupCIWorkspace
   
 before_cache:
