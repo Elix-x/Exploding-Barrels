@@ -1,0 +1,15 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/Elix-x/Exploding-Barrels/issues"
+[[mods]]
+modId="boombarrels"
+version="${file.jarVersion}"
+displayName="Exploding Barrels"
+# updateJSONURL="http://myurl.me/"
+displayURL="https://github.com/Elix-x/Exploding-Barrels"
+# logoFile="boombarrels-logo.png"
+# credits=""
+authors="Elix_x"
+description='''
+This is an experiment, but not like what you think maybe idk.
+'''
