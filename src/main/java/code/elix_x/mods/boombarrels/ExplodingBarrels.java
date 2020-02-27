@@ -54,7 +54,7 @@ public class ExplodingBarrels {
 
 	private boolean initialized = false;
 	private final Semaphore initSemaphore = new Semaphore(1);
-	private static final INITCALLSC = 3;
+	private static final int INITCALLSC = 3;
 
 	private void initialize(){
 		initSemaphore.acquire();
