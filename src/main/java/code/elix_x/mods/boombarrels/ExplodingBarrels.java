@@ -6,9 +6,9 @@ import java.util.concurrent.Semaphore;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.BlockItem;
 import net.minecraft.util.ResourceLocation;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -62,7 +62,7 @@ public class ExplodingBarrels {
 		//Actual Initialization
 		Block expBarrel = new ExplodingBarrelBlock(true, false).setRegistryName(BOOMBARREL);
 		blocks.add(expBarrel);
-		items.add(new ItemBlock(expBarrel).setRegistryName(BOOMBARREL));
+		items.add(new BlockItem(expBarrel, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(BOOMBARREL));
 		//Initialization complete
 		initialized = true;
 		initSemaphore.release(INITCALLSC - 1);
@@ -98,11 +98,9 @@ public class ExplodingBarrels {
 		protected boolean boomMelee;
 
 		public ExplodingBarrelBlock(boolean boomProjectile, boolean boomMelee){
-			super(Block.Properties.create(Material.WOOD));
+			super(Block.Properties.create(Material.WOOD)); //TODO
 			this.boomProjectile = boomProjectile;
 			this.boomMelee = boomMelee;
-			//TODO
-			setCreativeTab(CreativeTabs.DECORATIONS);
 		}
 
 		//TODO
