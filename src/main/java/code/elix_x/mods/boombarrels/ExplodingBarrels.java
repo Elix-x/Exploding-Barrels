@@ -73,7 +73,7 @@ public class ExplodingBarrels {
 	 */
 
 	private void setup(final FMLCommonSetupEvent event){
-		initialize()
+		initialize();
 	}
 
 	private void clientSetup(final FMLClientSetupEvent event){
@@ -82,13 +82,13 @@ public class ExplodingBarrels {
 
 	@SubscribeEvent
 	public void registerBlocks(RegistryEvent.Register<Block> event){
-		initialize()
+		initialize();
 		blocks.forEach(event.getRegistry()::register);
 	}
 
 	@SubscribeEvent
 	public void registerItems(RegistryEvent.Register<Item> event){
-		initialize()
+		initialize();
 		items.forEach(event.getRegistry()::register);
 	}
 
