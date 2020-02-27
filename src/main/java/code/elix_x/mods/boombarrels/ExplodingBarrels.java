@@ -17,7 +17,6 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -34,9 +33,6 @@ public class ExplodingBarrels {
 	private static final Logger LOGGER = LogManager.getLogger();
 
 	public static final ResourceLocation BOOMBARREL = new ResourceLocation(MODID, "exploding_barrel");
-
-	@Instance(MODID)
-	public static ExplodingBarrels INSTANCE;
 
 	public ExplodingBarrels(){
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
