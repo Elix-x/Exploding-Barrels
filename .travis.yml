@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - openjdk10
+  - oraclejdk13
 
 before_install:
   - ./gradlew setupCIWorkspace
