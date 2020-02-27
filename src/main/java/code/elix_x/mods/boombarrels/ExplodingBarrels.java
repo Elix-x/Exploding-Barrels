@@ -39,7 +39,7 @@ public class ExplodingBarrels {
 	public static final RegistryObject<ExplodingBarrelBlock> expBarrel = BLOCKS.reg(BOOMBARRELID, () -> new ExplodingBarrelBlock(true, false));
 	
 	static {
-		ITEMS.register(BOOMBARRELID, () -> new BlockItem(expBarrel, new Item.Properties().group(ItemGroup.DECORATIONS)));
+		ITEMS.register(BOOMBARRELID, () -> new BlockItem(expBarrel.get(), new Item.Properties().group(ItemGroup.DECORATIONS)));
 	}
 
 	public ExplodingBarrels(){
