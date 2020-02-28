@@ -20,6 +20,7 @@ script: ./gradlew check publishAllPublicationsToLocalRepository
 deploy:
   - provider: script
     script: ls .
+    edge: true
   - provider: releases
     token:
       secure: $GITACCESSTOKEN
@@ -27,7 +28,9 @@ deploy:
     file: "build/libs/*.jar"
     on:
       tags: true
+    edge: true
   - provider: script
     script: ./gradlew curseforge
     on:
       tags: true
+    edge: true
