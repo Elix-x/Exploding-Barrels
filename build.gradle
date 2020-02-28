@@ -121,10 +121,20 @@ jar {
 	}
 }
 
+task sourcesJar(type: Jar, dependsOn: classes){
+	classifier = 'sources'
+	from sourceSets.main.allSource
+}
+build.dependsOn sourcesJar
+
 javadoc {
 	failOnError = false
 	options.encoding = 'UTF-8'
 	options.addBooleanOption('html5', true)
+}
+
+artifacts {
+	archives sourcesJar
 }
 
 // This is the preferred method to reobfuscate your jar file
