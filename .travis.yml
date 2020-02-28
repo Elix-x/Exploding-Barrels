@@ -29,8 +29,8 @@ deploy:
     on:
       tags: true
     edge: true
-  - provider: script
-    script: ./gradlew curseforge
-    on:
-      tags: true
-    edge: true
+  # - provider: script
+  #   script: ./gradlew curseforge
+  #   on:
+  #     tags: true
+  #   edge: true
