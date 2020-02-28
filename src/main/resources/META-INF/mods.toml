@@ -3,7 +3,7 @@ loaderVersion="[31,)"
 issueTrackerURL="https://github.com/Elix-x/Exploding-Barrels/issues"
 [[mods]]
 modId="boombarrels"
-version="${file.jarVersion}"
+version="${version}"
 displayName="Exploding Barrels"
 # updateJSONURL="http://myurl.me/"
 displayURL="https://github.com/Elix-x/Exploding-Barrels"
