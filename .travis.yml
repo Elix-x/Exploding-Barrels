@@ -14,7 +14,8 @@ cache:
     - "$HOME/.gradle/caches/"
     - "$HOME/.gradle/wrapper/"
 
-script: ./gradlew build check
+install: ./gradlew build
+script: ./gradlew check publishAllPublicationsToLocalRepository
 
 deploy:
   - provider: script
