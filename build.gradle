@@ -106,10 +106,6 @@ processResources {
 	}
 }
 
-java {
-	withSourcesJar()
-}
-
 // Example for how to get properties into the manifest for reading by the runtime..
 jar {
 	archiveClassifier = 'obf'
@@ -126,11 +122,15 @@ jar {
 	}
 }
 
+task sourcesJar(type: Jar, dependsOn: classes){
+	archiveClassifier = 'sources'
+	from sourceSets.main.allSource
+}
 task devJar(type: Jar, dependsOn: classes){
     from sourceSets.main.output
     classifier = 'dev'
 }
-tasks["build"].dependsOn(devJar)
+tasks["build"].dependsOn(sourcesJar, devJar)
 
 javadoc {
 	failOnError = false
