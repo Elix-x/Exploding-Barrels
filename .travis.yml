@@ -13,7 +13,7 @@ cache:
 
 deploy:
   - provider: script
-    script: ls ./build/libs/
+    script: ls ./build/
   - provider: releases
     token:
       secure: $GITACCESSTOKEN
