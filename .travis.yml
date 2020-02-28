@@ -24,6 +24,9 @@ deploy:
   - provider: script
     script: ls -R ./mcmodsrepo/
     edge: true
+  - provider: script
+    script: car ./mcmodsrepo/code/elix_x/mods/boombarrels/Exploding-Barrels/0.0.0-alpha0-1.15.2/Exploding-Barrels-0.0.0-alpha0-1.15.2.pom
+    edge: true
   - provider: releases
     token:
       secure: $GITACCESSTOKEN
