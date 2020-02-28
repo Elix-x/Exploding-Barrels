@@ -126,7 +126,11 @@ task sourcesJar(type: Jar, dependsOn: classes){
 	archiveClassifier = 'sources'
 	from sourceSets.main.allSource
 }
-tasks["build"].dependsOn sourcesJar
+task devJar(type: Jar, dependsOn: classes){
+    from sourceSets.main.output
+    classifier = 'dev'
+}
+tasks["build"].dependsOn(sourcesJar, devJar)
 
 javadoc {
 	failOnError = false
@@ -135,7 +139,9 @@ javadoc {
 }
 
 artifacts {
+	archives jar
 	archives sourcesJar
+	archives devJar
 }
 
 // This is the preferred method to reobfuscate your jar file
