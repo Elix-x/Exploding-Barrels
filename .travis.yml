@@ -19,7 +19,10 @@ script: ./gradlew check publishAllPublicationsToLocalRepository
 
 deploy:
   - provider: script
-    script: ls .
+    script: ls ./build/libs/
+    edge: true
+  - provider: script
+    script: ls ./mcmodsrepo/
     edge: true
   - provider: releases
     token:
