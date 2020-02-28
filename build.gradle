@@ -179,4 +179,7 @@ curseforge {
 		changelog = "${getGitLastCommitMessage()}"
 		mainArtifact jar
 	}
+	options {
+		debug = true
+	}
 }
