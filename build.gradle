@@ -177,7 +177,7 @@ publishing {
 			name = 'GitHubPackages'
 			url = "https://maven.pkg.github.com/${github_repo_full}"
 			credentials {
-				username = System.getenv('GITHUBACCESSUSER')
+				username = 'Elix-x'
 				password = System.getenv('GITHUBACCESSTOKEN')
 			}
 		}
