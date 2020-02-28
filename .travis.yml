@@ -21,3 +21,5 @@ deploy:
       tags: true
   - provider: script
     script: ./gradlew curseforge
+    on:
+      tags: true
