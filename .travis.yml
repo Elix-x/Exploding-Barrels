@@ -12,6 +12,8 @@ cache:
     - "$HOME/.gradle/wrapper/"
 
 deploy:
+  - provider: script
+    script: ls ./build/libs/
   - provider: releases
     token:
       secure: $GITACCESSTOKEN
