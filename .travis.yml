@@ -22,7 +22,7 @@ deploy:
     script: ls ./build/libs/
     edge: true
   - provider: script
-    script: ls ./mcmodsrepo/
+    script: ls -R ./mcmodsrepo/
     edge: true
   - provider: releases
     token:
