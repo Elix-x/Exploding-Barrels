@@ -13,11 +13,10 @@ cache:
 
 deploy:
   - provider: releases
-    api_key:
+    token:
       secure: $GITACCESSTOKEN
     file_glob: true
     file: "build/libs/*.jar"
-    skip_cleanup: true
     on:
       tags: true
   - provider: script
