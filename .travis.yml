@@ -20,3 +20,5 @@ deploy:
     skip_cleanup: true
     on:
       tags: true
+  - provider: script
+    script: ./gradlew curseforge
