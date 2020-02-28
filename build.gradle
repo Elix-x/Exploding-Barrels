@@ -180,6 +180,10 @@ publishing {
 				password = System.getenv('GITHUBACCESSTOKEN')
 			}
 		}
+        maven {
+        	name = 'Local'
+			url = "file:///${project.projectDir}/mcmodsrepo"
+        }
 	}
 }
 
