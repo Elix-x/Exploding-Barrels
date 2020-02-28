@@ -23,7 +23,7 @@ deploy:
     edge: true
   - provider: releases
     token:
-      secure: $GITACCESSTOKEN
+      secure: $GITHUBACCESSTOKEN
     file_glob: true
     file: "build/libs/*.jar"
     on:
